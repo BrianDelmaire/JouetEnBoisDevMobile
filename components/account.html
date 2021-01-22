@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=jgGtSFolRvgMZDHTDvY_I7bOwXM9PIT7goGDBWR0RmKliPNSSi1KIU8CakmX1sor1ldXgiB-p9ffbqhMKhhO8YPAGKmBFtWIQ1jOduFaconyFuq5Rb3ttdsyKOXLjhMQrAuPgpfWQIe2A18ZzXZDYA" charset="UTF-8"></script><script type="text/javascript" src="creatAccount.js"></script>
+
+    <title>Account</title>
+  </head>
+  <body align="center" style="margin: 10px">
+    <h1 align="center" style="margin: 20; padding: 20">Créer votre compte</h1>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <p>
+      Vous avez déjà un compte ?
+      <a href="http://127.0.0.1/prestashop/connexion">Connectez-vous !</a>
+    </p>
+    <!-- Gender -->
+    <div class="col-md-6 form-control-valign">
+      <label class="radio-inline">
+        <span class="custom-radio">
+          <input name="id_gender" type="radio" value="1" />
+          <span></span>
+        </span>
+        M
+      </label>
+      <label class="radio-inline">
+        <span class="custom-radio">
+          <input name="id_gender" type="radio" value="2" />
+          <span></span>
+        </span>
+        Mme
+      </label>
+    </div>
+    <!-- Name -->
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">Prénom</label>
+        <input
+          type="text"
+          class="form-control"
+          id="validationDefault01"
+          value=""
+          required
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Nom</label>
+        <input
+          type="text"
+          class="form-control"
+          id="validationDefault02"
+          value=""
+          required
+        />
+      </div>
+    </br>
+      <div class="col-md-4">
+        <label for="validationCustomMail" class="form-label">Email</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input
+            type="mail"
+            class="form-control"
+            id="validationCustomMail"
+            aria-describedby="inputGroupPrepend"
+            required
+          />
+          <div class="invalid-feedback">Please type an email.</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">Mot de Passe</label>
+        <input
+          type="text"
+          class="form-control"
+          id="validationDefault03"
+          required
+        />
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label">Date de naissance</label>
+        <input
+          type="date"
+          class="form-control"
+          id="validationDefault05"
+          required
+        />
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck2">
+            Acceptez les termes et conditions
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit"onclick='addCustomer()'>Créer</button>
+      </div>
+    </form>
+  </body>
+</html>
